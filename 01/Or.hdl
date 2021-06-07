@@ -18,7 +18,3 @@ CHIP Or {
 	Not(in=b, out=notb);
 	Nand(a=nota, b=notb, out=out);
 }
-/*
- * Nand(a, b) = Or(Not(a), Not(b))
- * So we use Nand(Not(a), Not(b)) to present Or(a, b)
-*/
