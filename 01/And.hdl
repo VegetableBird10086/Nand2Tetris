@@ -15,10 +15,5 @@ CHIP And {
 
     PARTS:
     Nand(a=a, b=b, out=temp);
-	Nand(a=temp, b=temp, out=out);
+    Nand(a=temp, b=temp, out=out);
 }
-/**
- * Nand(Nand(a, b), Nand(a, b))
- * is equal to 
- * And(a, b)
-*/
