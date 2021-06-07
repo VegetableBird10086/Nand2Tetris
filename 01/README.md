@@ -1,11 +1,7 @@
-# ADD GATE:
-```cpp
-CHIP And {
-    IN a, b;
-    OUT out;
+# 这里简述一下各种门的实现
+## 1.And
+Nand(a, b) = Not(And(a, b))
+因此，可以用Nand(Nand(a, b), Nand(a, b))表示And(a, b)
 
-    PARTS:
-    Nand(a=a, b=b, out=temp);
-	Nand(a=temp, b=temp, out=out);
-}
-```
+## 2.And16
+使用And即可
