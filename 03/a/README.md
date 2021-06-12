@@ -1,9 +1,9 @@
 ## 1.Bit
 D触发器：
 if in == 1
-  out[t+1] = in[t]
+  out[t] = in[t-1]
 else
-  out[t+1] = out[t]
+  out[t] = out[t-1]
 这与Bit非常相似，因此可以考虑用D触发器实现位
 使用Mux对preout和in进行选择：
 ```
